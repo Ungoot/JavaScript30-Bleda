@@ -22,6 +22,9 @@ function draw(e) {
   ctx.stroke();
   [lastX, lastY] = [e.offsetX, e.offsetY];
   hue++;
+  if (hue >= 360) {
+    hue = 0;
+  };
 };
 canvas.addEventListener('mousedown', (e) => {
   isDrawing = true;
