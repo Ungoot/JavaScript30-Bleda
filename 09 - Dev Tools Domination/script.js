@@ -16,6 +16,7 @@ console.warn('I am warning you!');
 // Error :|
 console.error('He\s dead Jim.');
 // Info
+console.info('I am the one who knocks');
 // Testing
 // Clearing
 // Viewing DOM Elements
