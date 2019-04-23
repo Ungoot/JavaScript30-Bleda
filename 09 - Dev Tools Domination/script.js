@@ -20,9 +20,11 @@ console.info('I am the one who knocks');
 // Testing
 const p = document.querySelector('p');
 console.assert(p.classList.contains('hi'), 'WRONG!');
+// Viewing DOM Elements
+console.log(p);
+console.dir(p);
 // Clearing
 console.clear();
-// Viewing DOM Elements
 // Grouping together
 // Counting
 // Timing
