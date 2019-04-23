@@ -8,8 +8,9 @@ function makeGreen() {
 // Regular
 console.log('Hello world');
 // Interpolated
-console.log('Hello %s world', 'my')
+console.log('Hello %s world', 'my');
 // Styled
+console.log('%cI am a great text', 'font-size: 20px; color: red; text-shadow: 1px 1px 0 black');
 // warning!
 // Error :|
 // Info
