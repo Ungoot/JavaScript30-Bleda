@@ -14,6 +14,7 @@ console.log('%cI am a great text', 'font-size: 20px; color: red; text-shadow: 1p
 // warning!
 console.warn('I am warning you!');
 // Error :|
+console.error('He\s dead Jim.');
 // Info
 // Testing
 // Clearing
