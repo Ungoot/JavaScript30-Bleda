@@ -34,4 +34,16 @@ dogs.forEach(dog => {
   console.groupEnd(`${dog.name}`);
 });
 // Counting
+console.count('Wes');
+console.count('Wes');
+console.count('Steve');
+console.count('Steve');
+console.count('Wes');
+console.count('Steve');
+console.count('Wes');
+console.count('Steve');
+console.count('Steve');
+console.count('Steve');
+console.count('Steve');
+console.count('Steve');
 // Timing
