@@ -18,6 +18,8 @@ console.error('He\s dead Jim.');
 // Info
 console.info('I am the one who knocks');
 // Testing
+const p = document.querySelector('p');
+console.assert(p.classList.contains('hi'), 'WRONG!');
 // Clearing
 // Viewing DOM Elements
 // Grouping together
