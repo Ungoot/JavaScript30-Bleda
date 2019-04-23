@@ -34,23 +34,25 @@ dogs.forEach(dog => {
   console.groupEnd(`${dog.name}`);
 });
 // Counting
-console.count('Wes');
-console.count('Wes');
+console.count('Bleda');
+console.count('Billy');
 console.count('Steve');
+console.count('Billy');
+console.count('Bleda');
 console.count('Steve');
-console.count('Wes');
+console.count('Bleda');
 console.count('Steve');
-console.count('Wes');
+console.count('Billy');
 console.count('Steve');
-console.count('Steve');
-console.count('Steve');
-console.count('Steve');
+console.count('Billy');
 console.count('Steve');
 // Timing
 console.time('fetching data');
-fetch('https://api.github.com/users/wesbos')
+fetch('https://api.github.com/users/ungoot')
   .then(data => data.json())
   .then(data => {
     console.timeEnd('fetching data');
     console.log(data);
   });
+//Table
+console.table(dogs);
