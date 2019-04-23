@@ -14,13 +14,14 @@ console.log('%cI am a great text', 'font-size: 20px; color: red; text-shadow: 1p
 // warning!
 console.warn('I am warning you!');
 // Error :|
-console.error('He\s dead Jim.');
+console.error('He\'s dead Jim.');
 // Info
 console.info('I am the one who knocks');
 // Testing
 const p = document.querySelector('p');
 console.assert(p.classList.contains('hi'), 'WRONG!');
 // Clearing
+console.clear();
 // Viewing DOM Elements
 // Grouping together
 // Counting
