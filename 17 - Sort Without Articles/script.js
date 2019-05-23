@@ -4,10 +4,4 @@ function strip(bandName) {
   return bandName.replace(/^(a |an |the )/i, '').trim();
 }
 
-const sortedBands = bands.sort(function (a, b) {
-  if (strip(a) > strip(b)) {
-    return 1;
-  } else {
-    return -1;
-  }
-});
+const sortedBands = bands.sort((a, b) => strip(a) > strip(b) ? 1 : -1);
