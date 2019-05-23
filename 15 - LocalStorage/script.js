@@ -16,6 +16,15 @@ function addItem(e) {
   console.table(items);
 }
 
+function toggleDone(e) {
+  if (!e.target.matches('input')) return;
+  const el = e.target;
+  const index = el.dataset.index;
+  items[index].done = !items[index].done
+  localStorage.setItem('items', JSON.stringify(items));
+  populateList(items, itemsList);
+}
+
 function populateList(plates = [], platesList) {
   platesList.innerHTML = plates.map((plate, i) => {
     return `
@@ -28,5 +37,6 @@ function populateList(plates = [], platesList) {
 }
 
 addItems.addEventListener('submit', addItem);
+itemsList.addEventListener('click', toggleDone);
 
-populateList(items, itemsList)
+populateList(items, itemsList);
