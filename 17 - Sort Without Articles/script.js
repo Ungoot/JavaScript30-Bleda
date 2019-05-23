@@ -5,7 +5,7 @@ function strip(bandName) {
 }
 
 const sortedBands = bands.sort(function (a, b) {
-  if (a > b) {
+  if (strip(a) > strip(b)) {
     return 1;
   } else {
     return -1;
