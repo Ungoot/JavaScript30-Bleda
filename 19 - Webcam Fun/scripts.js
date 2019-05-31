@@ -30,7 +30,11 @@ function takePhoto() {
   snap.play();
 
   const data = canvas.toDataURL('image/jpeg');
-  console.log(data);
+  const link = document.createElement('a');
+  link.href = data;
+  link.setAttribute('download', 'screenshot');
+  link.innerHTML = `<img src="${data}" alt="Screenshot" />`
+  strip.insertBefore(link, strip.firstChild);
 };
 
 getVideo();
