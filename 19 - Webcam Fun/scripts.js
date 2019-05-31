@@ -14,5 +14,15 @@ function getVideo() {
       console.error(`Error`, err);
     });
 }
+function paintToCanvas() {
+  const width = video.videoWidth;
+  const height = video.videoHeight;
+  canvas.height = height;
+  canvas.width = width;
+
+  return setInterval(() => {
+    ctx.drawImage(video, 0, 0, width, height);
+  }, 16); // ~ 60FPS
+};
 
 getVideo();
