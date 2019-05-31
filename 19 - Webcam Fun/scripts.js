@@ -25,6 +25,7 @@ function paintToCanvas() {
     let pixels = ctx.getImageData(0, 0, width, height);
     //pixels = redEffect(pixels);
     pixels = rgbSplit(pixels);
+    ctx.globalAlpha = 0.1; //ghosting
     ctx.putImageData(pixels, 0, 0);
   }, 16); // ~ 60FPS
 };
